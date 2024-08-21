@@ -1,0 +1,15 @@
+.container {
+  @apply cursor-pointer flex justify-start items-center text-s font-medium gap-2.5 px-[14px] py-2 rounded-[20px]  bg-blue-light text-accent transition;
+
+  @media (--hover) {
+    &:not(.selected) {
+      &:hover {
+        @apply bg-blue-20;
+      }
+    }
+  }
+
+  &.selected {
+    @apply bg-blue text-white;
+  }
+}
