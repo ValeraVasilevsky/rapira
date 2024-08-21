@@ -1,0 +1,19 @@
+.container {
+  @apply flex justify-start items-center gap-2.5;
+
+  & .clear {
+    @apply text-accent text-xs font-medium cursor-pointer;
+  }
+
+  & .trigger {
+    @apply flex justify-start items-center gap-1 text-gray text-xs font-medium cursor-pointer;
+
+    & .icon {
+      @apply rotate-180 transition-transform;
+
+      &.open {
+        @apply rotate-0;
+      }
+    }
+  }
+}

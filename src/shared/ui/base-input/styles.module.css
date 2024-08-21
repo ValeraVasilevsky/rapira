@@ -1,5 +1,5 @@
 .container {
-  @apply w-full flex justify-center items-center gap-2.5 bg-white rounded-md px-2.5 py-[13px] transition border border-solid border-transparent;
+  @apply w-full max-w-[400px] flex justify-center items-center gap-2.5 bg-white rounded-md px-2.5 py-[13px] transition border border-solid border-transparent;
 
   @media (--hover) {
     &:hover {

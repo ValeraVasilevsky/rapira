@@ -4,13 +4,17 @@ export default {
   theme: {
     extend: {
       colors: {
+        primary: "#3E97FF",
+        secondary: "#D8D8E5",
+        accent: "#2884EF",
         black: "#000",
         "black-light": "#181C32",
         white: "#F9F9F9",
         "white-10": "#FFFFFF1A",
         blue: "#3E97FF",
-        secondary: "#D8D8E5",
-        primary: "#3E97FF",
+        "blue-light": "#EEF6FF",
+        "blue-20": "#3E97FF33",
+        gray: "#A1A5B7",
       },
 
       fontSize: {
