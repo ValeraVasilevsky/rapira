@@ -15,7 +15,7 @@ export const router = createRouter({
         {
           path: "",
           name: "posts",
-          component: (): Component => import("pages/posts/index.vue"),
+          component: (): Component => import("pages/blog/index.vue"),
         },
       ],
     },
