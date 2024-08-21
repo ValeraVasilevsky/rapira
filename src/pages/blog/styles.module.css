@@ -1,3 +1,7 @@
 .container {
-  @apply w-full;
+  @apply w-full bg-gray-200 flex justify-start items-start flex-col gap-2.5;
+
+  & .toolbar {
+    @apply w-full;
+  }
 }

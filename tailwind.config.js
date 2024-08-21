@@ -15,6 +15,7 @@ export default {
         "blue-light": "#EEF6FF",
         "blue-20": "#3E97FF33",
         gray: "#A1A5B7",
+        "gray-200": "#F1F1F2",
       },
 
       fontSize: {

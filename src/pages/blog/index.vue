@@ -1,6 +1,6 @@
 <template>
   <div :class="styles.container">
-    <BlogToolbar />
+    <BlogToolbar :class="styles.toolbar" />
   </div>
 </template>
 
