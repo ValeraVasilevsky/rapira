@@ -1,0 +1,7 @@
+.header {
+  @apply w-full flex justify-start items-center bg-black lg:py-[15px] lg:px-14 gap-[15px] px-[22px] py-[26px];
+
+  & .tabs {
+    @apply ml-20;
+  }
+}

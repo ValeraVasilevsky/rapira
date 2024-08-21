@@ -4,6 +4,7 @@ import autoprefixer from "autoprefixer";
 import nested from "postcss-nested";
 import customMedia from "postcss-custom-media";
 import postcssGlobalData from "@csstools/postcss-global-data";
+import tailwind from "tailwindcss";
 
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
@@ -11,14 +12,12 @@ const __dirname = dirname(fileURLToPath(import.meta.url));
 const config = {
   plugins: [
     postcssGlobalData({
-      files: [
-        join(__dirname, "src", "shared", "ui", "theme", "media.css"),
-        join(__dirname, "src", "shared", "ui", "theme", "container.css"),
-      ],
+      files: [join(__dirname, "src", "shared", "ui", "theme", "media.css")],
     }),
     autoprefixer,
     customMedia,
     nested,
+    tailwind,
   ],
 };
 

@@ -1,0 +1,15 @@
+.container {
+  @apply flex justify-start items-center gap-5;
+
+  & .tab {
+    @apply text-s font-semibold px-[14px] py-2 transition-all transition-[150ms] text-white rounded-md cursor-pointer;
+
+    &:hover {
+      @apply bg-white-10;
+    }
+
+    &.active {
+      @apply bg-white-10 text-blue;
+    }
+  }
+}
