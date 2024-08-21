@@ -1,0 +1,27 @@
+.container {
+  @apply w-full flex justify-center items-center gap-2.5 bg-white rounded-md px-2.5 py-[13px] transition border border-solid border-transparent;
+
+  @media (--hover) {
+    &:hover {
+      @apply border-primary;
+    }
+  }
+
+  &:has(.input:active, .input:focus) {
+    @apply border-primary shadow-custom;
+  }
+
+  & .input {
+    @apply w-full bg-transparent  text-black-light text-xs font-medium;
+
+    &::placeholder {
+      @apply text-secondary text-xs font-medium;
+    }
+
+    &:active,
+    &:hover,
+    &:focus {
+      @apply border-none outline-none;
+    }
+  }
+}

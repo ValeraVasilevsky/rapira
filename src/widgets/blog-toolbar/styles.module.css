@@ -1,0 +1,11 @@
+.container {
+  @apply flex flex-wrap gap-2.5 justify-between items-center w-full py-3 px-2.5 bg-[#fff];
+
+  & .title {
+    @apply flex-1 text-m font-bold text-black-light;
+  }
+
+  & .input {
+    @apply basis-full;
+  }
+}

@@ -1,7 +1,11 @@
 <template>
-  <div></div>
+  <div :class="styles.container">
+    <BlogToolbar />
+  </div>
 </template>
 
-<script setup lang="ts"></script>
+<script setup lang="ts">
+import { BlogToolbar } from "widgets/blog-toolbar";
 
-<style scoped></style>
+import styles from "./styles.module.css";
+</script>
