@@ -1,11 +1,11 @@
 .container {
-  @apply w-full bg-gray-200 flex justify-start items-start flex-col gap-2.5;
+  @apply w-full min-h-full h-full bg-gray-200 flex justify-start items-start flex-col;
 
   & .toolbar {
     @apply w-full;
   }
 
   & .wrapper {
-    @apply w-full h-full;
+    @apply w-full min-h-full h-full p-2.5;
   }
 }

@@ -1,3 +1,32 @@
 .card {
-  @apply w-full h-full;
+  @apply w-full h-full flex justify-start items-start flex-col gap-2.5;
+
+  & .error {
+    @apply bg-gray-200 w-full h-[200px] flex items-center justify-center flex-col gap-2.5 rounded-xl;
+  }
+
+  & .img {
+    @apply w-full h-[200px] object-cover rounded-xl;
+  }
+
+  & .info {
+    @apply w-full flex justify-start items-center gap-2.5 text-gray-dark text-xs font-medium;
+
+    span {
+      @apply flex justify-start items-center gap-1;
+    }
+  }
+
+  & .title {
+    @apply text-title font-semibold text-black;
+    letter-spacing: -1%;
+  }
+
+  & .description {
+    @apply w-full text-base font-medium text-black whitespace-nowrap overflow-hidden text-ellipsis;
+  }
+
+  & .tags {
+    @apply flex justify-start items-start gap-2.5 flex-wrap;
+  }
 }

@@ -11,8 +11,12 @@ export interface BlogCard {
   title: string;
   body: string;
   reactions: {
-    likes: number,
-    dislikes: number
+    likes: number;
+    dislikes: number;
   };
   views: number;
+}
+
+export interface BlogCardResponse extends Omit<BlogCard, 'tags'> {
+  tags: string[];
 }

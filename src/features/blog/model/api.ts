@@ -1,5 +1,6 @@
 import { api } from 'shared/api';
-import type { BlogCard } from './types';
+import { type BlogCard, type BlogCardResponse } from './types';
+import { capitalizeFirstLetter } from 'shared/utils/strings';
 
 export const fetchPosts = async (
   limit: number,
@@ -12,5 +13,11 @@ export const fetchPosts = async (
     },
   });
 
-  return data;
+  return (data.posts as BlogCardResponse[]).map((post) => ({
+    ...post,
+    tags: post.tags.map((tag) => ({
+      text: capitalizeFirstLetter(tag),
+      value: tag,
+    })),
+  }));
 };
