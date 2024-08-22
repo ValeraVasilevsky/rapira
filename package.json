@@ -12,6 +12,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "axios": "^1.7.4",
     "modern-normalize": "^3.0.0",
     "pinia": "^2.2.2",
     "vue": "^3.4.37",
@@ -19,11 +20,13 @@
   },
   "devDependencies": {
     "@csstools/postcss-global-data": "^3.0.0",
+    "@faker-js/faker": "^8.4.1",
     "@vitejs/plugin-vue": "^5.1.2",
     "autoprefixer": "^10.4.20",
     "postcss": "^8.4.41",
     "postcss-custom-media": "^11.0.1",
     "postcss-nested": "^6.2.0",
+    "prettier": "^3.3.3",
     "tailwindcss": "^3.4.10",
     "typescript": "^5.5.3",
     "vite": "^5.4.1",

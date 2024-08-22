@@ -29,51 +29,51 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from "vue";
-import { BaseInput } from "shared/ui";
-import { BlogFilters, type FilterListItem } from "features/blog";
+import { ref } from 'vue';
+import { BaseInput } from 'shared/ui';
+import { BlogFilters, type FilterListItem, useBlogStore } from 'features/blog';
 
-import SearchIcon from "shared/assets/icons/magnifier.svg";
+import SearchIcon from 'shared/assets/icons/magnifier.svg';
 
-import styles from "./styles.module.css";
+import styles from './styles.module.css';
+import { storeToRefs } from 'pinia';
 
 // вообще, фильтры по-хорошему надо подтягивать с бэка, но я напишу их константой
 const FILTERS_OPTIONS = ref<FilterListItem[]>([
   {
-    text: "Город",
-    value: "city",
+    text: 'Город',
+    value: 'city',
   },
   {
-    text: "Природа",
-    value: "nature",
+    text: 'Природа',
+    value: 'nature',
   },
   {
-    text: "Люди",
-    value: "people",
+    text: 'Люди',
+    value: 'people',
   },
   {
-    text: "Животные",
-    value: "animals",
+    text: 'Животные',
+    value: 'animals',
   },
   {
-    text: "Еда",
-    value: "food",
+    text: 'Еда',
+    value: 'food',
   },
   {
-    text: "Напитки",
-    value: "drinks",
+    text: 'Напитки',
+    value: 'drinks',
   },
   {
-    text: "Архитектура",
-    value: "architecture",
+    text: 'Архитектура',
+    value: 'architecture',
   },
   {
-    text: "Искусство",
-    value: "art",
+    text: 'Искусство',
+    value: 'art',
   },
 ]);
 
-const search = ref<string>("");
+const { selectedFilters, search } = storeToRefs(useBlogStore());
 const isOpen = ref<boolean>(false);
-const selectedFilters = ref<FilterListItem[]>([]);
 </script>

@@ -4,4 +4,8 @@
   & .toolbar {
     @apply w-full;
   }
+
+  & .wrapper {
+    @apply w-full h-full;
+  }
 }
